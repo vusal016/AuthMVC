@@ -1,0 +1,1 @@
+﻿global using AuthAdminCrud.MVC.Models.common;
