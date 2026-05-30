@@ -1,0 +1,40 @@
+﻿@model AuthAdminCrud.MVC.ViewModels.LoginVm
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Login</title>
+    <link rel="stylesheet" href="~/css/account-login.css">
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="login-logo">
+            <a href="index.html">MyShop</a>
+        </div>
+        <h1 class="login-title">Welcome Back</h1>
+
+        <form asp-action="Login" asp-controller="Account" method="post">
+            <div class="form-group">
+                <label asp-for="UserName">Username</label>
+                <input asp-for="UserName" placeholder="Enter your username" required>
+                <span asp-validation-for="UserName"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" type="password" placeholder="Enter your password" required>
+                <span asp-validation-for="Password"></span>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <div class="form-footer">
+            Don't have an account? <a href="register.html">Register</a>
+        </div>
+    </div>
+
+</body>
+</html>

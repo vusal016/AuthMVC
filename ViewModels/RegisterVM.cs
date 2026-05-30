@@ -6,7 +6,7 @@ namespace AuthAdminCrud.MVC.ViewModels
     {
         [Required]
         [MaxLength(100)]
-        public string FullName { get; set; }
+        public string  ?FullName { get; set; }
         [Required]
         [MaxLength(100)]
         public string Password { get; set; }

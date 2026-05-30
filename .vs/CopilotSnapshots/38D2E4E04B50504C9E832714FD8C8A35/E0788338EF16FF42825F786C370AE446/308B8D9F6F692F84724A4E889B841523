@@ -1,0 +1,58 @@
+﻿@model AuthAdminCrud.MVC.ViewModels.RegisterVM
+
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Register</title>
+    <link rel="stylesheet" href="~/css/account-register.css">
+</head>
+<body>
+
+    <div class="register-card">
+        <div class="register-logo">
+            <a href="/home/index">MyShop</a>
+        </div>
+        <h1 class="register-title">Create Account</h1>
+
+        <form asp-action="Register" asp-controller="Account" method="POST">
+            <div class="form-group">
+                <label asp-for="FullName">Full Name</label>
+                <input asp-for="FullName" placeholder="Enter your full name" required>
+                <span asp-validation-for="FullName" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" type="email" placeholder="Enter your email" required>
+                <span asp-validation-for="Email" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" type="password" placeholder="Enter your password" required>
+                <span asp-validation-for="Password" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ConfirmPassword">Confirm Password</label>
+                <input asp-for="ConfirmPassword" type="password" placeholder="Confirm your password" required>
+                <span asp-validation-for="ConfirmPassword" class="error-message"></span>
+            </div>
+
+            <button type="submit" class="btn-register">Register</button>
+        </form>
+
+        <div class="form-footer">
+            Already have an account? <a href="/account/login">Login</a>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+</body>
+</html>

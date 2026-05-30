@@ -1,8 +1,53 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using AuthAdminCrud.MVC.ViewModels
+@model ICollection<ProductVM>
+@{
+    Layout = null;
 }
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Home</title>
+    <link rel="stylesheet" href="~/css/home-index.css">
+</head>
+<body>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <header class="site-header">
+        <a class="logo" href="index.html">MyShop</a>
+        <nav class="nav-links">
+            <a asp-controller="Account" asp-action="Login" class="btn-outline">Login</a>
+            <a asp-controller="Account" asp-action="Register" class="btn-primary">Register</a>
+            <a asp-controller="Account" asp-action="Logout" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1 class="section-title">Products</h1>
+        <div class="products-grid">
+
+          @foreach (var product in Model)
+            {
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="@product.ImageUrl" />
+                    </div>
+                    <div class="product-body">
+                        <p class="product-name">@product.Name</p>
+                        <p class="product-price">$@product.Price</p>
+                        <button class="product-btn">@product.ButtonText</button>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2025 MyShop. All rights reserved.</span>
+    </footer>
+
+</body>
+</html>

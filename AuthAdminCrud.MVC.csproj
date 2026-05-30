@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\AdminPanel\Controllers\" />
-    <Folder Include="Areas\AdminPanel\ViewModels\" />
     <Folder Include="Areas\AdminPanel\Views\" />
   </ItemGroup>
 

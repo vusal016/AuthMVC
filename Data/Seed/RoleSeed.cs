@@ -23,6 +23,7 @@
                 {
                     UserName = "admin",
                     Email = adminEmail,
+                    FullName = "System Admin"
                 };
                 await userManager.CreateAsync(adminUser, "Admin@123");
                 await userManager.AddToRoleAsync(adminUser, "Admin");

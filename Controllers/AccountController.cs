@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AuthAdminCrud.MVC.Controllers
 {
-    public class AccountController : Controller
+public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
@@ -35,12 +35,13 @@ namespace AuthAdminCrud.MVC.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
-
+           
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginVm loginVm)
         {
             if (!ModelState.IsValid)
@@ -56,6 +57,7 @@ namespace AuthAdminCrud.MVC.Controllers
             return RedirectToAction("Index", "Home");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
@@ -67,6 +69,7 @@ namespace AuthAdminCrud.MVC.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterVM registerVm)
         {
             if (!ModelState.IsValid)
@@ -76,7 +79,8 @@ namespace AuthAdminCrud.MVC.Controllers
             var user = new AppUser
             {
                 UserName = registerVm.Email,
-                Email = registerVm.Email
+                Email = registerVm.Email,
+                FullName = registerVm.FullName
             };
             var result = await _userManager.CreateAsync(user, registerVm.Password);
             if (!result.Succeeded)
@@ -87,6 +91,7 @@ namespace AuthAdminCrud.MVC.Controllers
                 }
                 return View(registerVm);
             }
+            await _userManager.AddToRoleAsync( user, "User");
             return RedirectToAction("Login");
         }
     }

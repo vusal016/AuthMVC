@@ -1,24 +1,25 @@
 ﻿namespace AuthAdminCrud.MVC.Models
 {
-    public class Product: BaseEntity
+    public class Product : BaseEntity
     {
         protected Product()
         {
-            
+
         }
 
-        public Product(string name, int price, string imageUrl, string buttonText)
+        public Product(string name, int price, string buttonText)
         {
             SetName(name);
             SetPrice(price);
-            SetImageUrl(imageUrl);
             SetButtonText(buttonText);
         }
 
-        public string Name { get;private set; }
-        public int Price { get;private set; }
-        public string ImageUrl { get;private set; }
-        public string ButtonText { get;private set; }
+        public string Name { get; private set; }
+        public int Price { get; private set; }
+        public string ImageUrl { get; private set; }
+        public string ButtonText { get; private set; }
+
+        public ICollection<BasketItem> BasketItems { get; set; } = new List<BasketItem>();
 
         private void SetName(string name)
         {
@@ -28,7 +29,7 @@
             }
             Name = name;
         }
-        private void SetImageUrl(string imageUrl)
+        public void SetImageUrl(string imageUrl)
         {
             if (string.IsNullOrEmpty(imageUrl))
             {
@@ -52,11 +53,21 @@
             }
             Price = price;
         }
-        public void Update(string name, int price)
+        public void UpdateName(string name)
         {
             SetName(name);
+        }
+        public void UpdatePrice(int price)
+        {
             SetPrice(price);
         }
-        
+        public void UpdateButtonText(string buttonText)
+        {
+            SetButtonText(buttonText);
+        }
+        public void UpdateImageUrl(string imageUrl)
+        {
+            SetImageUrl(imageUrl);
+        }
     }
 }
