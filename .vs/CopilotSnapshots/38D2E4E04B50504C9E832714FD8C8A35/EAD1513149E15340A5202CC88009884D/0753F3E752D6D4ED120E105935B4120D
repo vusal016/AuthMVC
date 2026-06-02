@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+@model AuthAdminCrud.MVC.ViewModels.RegisterVM
+
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Register</title>
+    <link rel="stylesheet" href="~/css/account-register.css">
+</head>
+<body>
+
+    <div class="register-card">
+        <div class="register-logo">
+            <a href="index.html">MyShop</a>
+        </div>
+        <h1 class="register-title">Create Account</h1>
+
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+
+            <button type="submit" class="btn-register">Register</button>
+        </form>
+
+        <div class="form-footer">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
+
+</body>
+</html>

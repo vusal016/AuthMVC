@@ -1853,8 +1853,10 @@ wwwroot\admin\vendor\jquery\jquery.min.map
 wwwroot\admin\vendor\jquery\jquery.slim.js
 wwwroot\admin\vendor\jquery\jquery.slim.min.js
 wwwroot\admin\vendor\jquery\jquery.slim.min.map
-wwwroot\css\home-index.css
 wwwroot\css\account-login.css
+wwwroot\css\account-profile.css
+wwwroot\css\account-register.css
+wwwroot\css\home-index.css
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\css\sb-admin-2.css
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\css\sb-admin-2.min.css
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\img\undraw_posting_photo.svg
@@ -3545,5 +3547,7 @@ C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\vendor\j
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\vendor\jquery\jquery.slim.js
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\vendor\jquery\jquery.slim.min.js
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\vendor\jquery\jquery.slim.min.map
-C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\css\home-index.css
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\css\account-login.css
+C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\css\account-register.css
+C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\css\home-index.css
+C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\css\account-profile.css

@@ -10,5 +10,9 @@ namespace AuthAdminCrud.MVC.ViewModels
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+        [Required]
+        [MaxLength(100)]
+        public IFormFile? File { get; set; }
+
     }
 }

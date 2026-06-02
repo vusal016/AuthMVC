@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+@model AuthAdminCrud.MVC.ViewModels.ProfileVM
+
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Profile</title>
+    <link rel="stylesheet" href="~/css/account-profile.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">MyShop</a>
+        <nav class="nav-links">
+            <a href="index.html" class="btn-home">Home</a>
+            <a href="/logout" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="profile-card">
+
+            <div class="profile-banner"></div>
+
+            <div class="profile-avatar-wrap">
+                <div class="profile-avatar" id="avatarInitial">D</div>
+            </div>
+
+            <div class="profile-info">
+                <p class="profile-name" id="displayName">Douglas McGee</p>
+                <p class="profile-username" id="displayUsername">@douglas</p>
+                <p class="profile-email" id="displayEmail">douglas@example.com</p>
+                <button class="btn-edit" onclick="toggleEdit()">Edit Profile</button>
+            </div>
+
+            <hr class="card-divider">
+
+            <div class="edit-form" id="editForm">
+                <h2>Edit Profile</h2>
+                <form action="/profile" method="POST">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="FullName" value="Douglas McGee" maxlength="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="Username" value="douglas" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" value="douglas@example.com" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save">Save Changes</button>
+                        <button type="button" class="btn-cancel" onclick="toggleEdit()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function toggleEdit() {
+          const form = document.getElementById('editForm');
+          form.classList.toggle('open');
+        }
+
+        const nameEl = document.getElementById('displayName');
+        const avatarEl = document.getElementById('avatarInitial');
+        if (nameEl && avatarEl) {
+          avatarEl.textContent = nameEl.textContent.trim().charAt(0).toUpperCase();
+        }
+    </script>
+
+</body>
+</html>

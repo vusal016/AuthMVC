@@ -1,11 +1,12 @@
 ﻿
+using AuthAdminCrud.MVC.Areas.Helper;
 using AuthAdminCrud.MVC.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using System.Threading.Tasks;
 
 namespace AuthAdminCrud.MVC.Controllers
 {
-public class AccountController : Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
@@ -25,7 +26,7 @@ public class AccountController : Controller
             {
                 return NotFound();
             }
-            var profile= new ProfileVM
+            var profile = new ProfileVM
             {
                 FullName = user.FullName,
                 Email = user.Email
@@ -33,11 +34,38 @@ public class AccountController : Controller
 
             return View(profile);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Profile(ProfileVM profileVm)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(profileVm);
+            }
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            user.FullName = profileVm.FullName;
+            user.Email = profileVm.Email;
+            user.ImageUrl= profileVm.File != null ? await FileHelper.SaveFileAsync(profileVm.File) : user.ImageUrl;
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View(profileVm);
+            }
+            return RedirectToAction("Profile");
+        }
 
         [HttpGet]
         public async Task<IActionResult> Login()
         {
-           
+
             return View();
         }
         [HttpPost]
@@ -91,7 +119,7 @@ public class AccountController : Controller
                 }
                 return View(registerVm);
             }
-            await _userManager.AddToRoleAsync( user, "User");
+            await _userManager.AddToRoleAsync(user, "User");
             return RedirectToAction("Login");
         }
     }

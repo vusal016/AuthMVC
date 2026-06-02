@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthAdminCrud.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e73948c7f30c90ad73c6cd7223e7a114d1886df4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+420f5ab1a59dacaf6eaa4b8c7c671d5c1a61cf4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthAdminCrud.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthAdminCrud.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

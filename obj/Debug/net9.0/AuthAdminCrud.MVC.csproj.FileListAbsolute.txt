@@ -1973,3 +1973,5 @@ C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\obj\Debug\net9.0\compr
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\obj\Debug\net9.0\compressed\1wabo4cqrv-ff2ireyigj.gz
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\obj\Debug\net9.0\compressed\wkz9x32bc8-lc4tfjppwf.gz
+C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\obj\Debug\net9.0\compressed\ov8o54mk7b-ov3uxzxowr.gz
+C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\obj\Debug\net9.0\compressed\m1gcn40ftf-y4q6gq5w0l.gz
