@@ -1,0 +1,58 @@
+﻿@model AuthAdminCrud.MVC.ViewModels.LoginVm
+@model AuthAdminCrud.MVC.ViewModels.LoginVm
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Login</title>
+    <link rel="stylesheet" href="~/css/account-login.css">
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="login-logo">
+            <a href="/">MyShop</a>
+        </div>
+        <h1 class="login-title">Welcome Back</h1>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div style="background: #fdf0ef; border: 1px solid #e74a3b; color: #e74a3b; padding: 12px; border-radius: 6px; margin-bottom: 16px; font-size: 13px;">
+                @foreach (var modelState in ViewData.ModelState.Values)
+                {
+                    @foreach (var error in modelState.Errors)
+                    {
+                        <p style="margin: 4px 0;">@error.ErrorMessage</p>
+                    }
+                }
+            </div>
+        }
+
+        <form asp-action="Login" asp-controller="Account" method="post">
+            <div class="form-group">
+                <label asp-for="UserName">Username</label>
+                <input asp-for="UserName" placeholder="Enter your username" required>
+                <span asp-validation-for="UserName" style="color: #e74a3b; font-size: 12px;"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" type="password" placeholder="Enter your password" required>
+                <span asp-validation-for="Password" style="color: #e74a3b; font-size: 12px;"></span>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <div class="form-footer">
+            Don't have an account? <a asp-action="Register" asp-controller="Account">Register</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,5 +1,8 @@
-﻿<!DOCTYPE html>
-@model AuthAdminCrud.MVC.ViewModels.ProfileVM
+﻿@model AuthAdminCrud.MVC.ViewModels.ProfileVM
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
 
 <html lang="az">
 <head>
@@ -38,6 +41,7 @@
             <div class="edit-form" id="editForm">
                 <h2>Edit Profile</h2>
                 <form asp-action="Profile" asp-controller="Account" method="POST">
+                    <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
                         <label asp-for="FullName">Full Name</label>
                         <input asp-for="FullName" maxlength="100" required>
@@ -70,6 +74,11 @@
           avatarEl.textContent = nameEl.textContent.trim().charAt(0).toUpperCase();
         }
     </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
 
 </body>
 </html>

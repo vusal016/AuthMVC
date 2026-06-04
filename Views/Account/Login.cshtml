@@ -1,4 +1,7 @@
-﻿@model AuthAdminCrud.MVC.ViewModels.LoginVm
+@model AuthAdminCrud.MVC.ViewModels.LoginVm
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
 <html lang="az">
 <head>
@@ -16,6 +19,10 @@
         <h1 class="login-title">Welcome Back</h1>
 
         <form asp-action="Login" asp-controller="Account" method="post">
+            @* Unutma ki bu yazilmasa xeta mesajlari gorunmez *@
+           @*  ===================================================== *@
+            <div asp-validation-summary="All" class="text-danger"></div>
+           @*  ========================================================== *@
             <div class="form-group">
                 <label asp-for="UserName">Username</label>
                 <input asp-for="UserName" placeholder="Enter your username" required>
@@ -32,9 +39,14 @@
         </form>
 
         <div class="form-footer">
-            Don't have an account? <a href="register.html">Register</a>
+            Don't have an account? <a asp-action="Register" asp-controller="Account">Register</a>
         </div>
     </div>
-
+@*     ================================================================================ *@
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+ @*     ================================================================================ *@
 </body>
+
 </html>

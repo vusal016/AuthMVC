@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Home</title>
+    <link rel="stylesheet" href="~/css/home-index.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">MyShop</a>
+        <nav class="nav-links">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="register.html" class="btn-primary">Register</a>
+            <a href="logout" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1 class="section-title">Products</h1>
+        <div class="products-grid">
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80" alt="Watch" onerror="this.parentElement.textContent='No image'">
+                </div>
+                <div class="product-body">
+                    <p class="product-name">Classic Watch</p>
+                    <p class="product-price">$49.99</p>
+                    <button class="product-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&q=80" alt="Perfume" onerror="this.parentElement.textContent='No image'">
+                </div>
+                <div class="product-body">
+                    <p class="product-name">Luxury Perfume</p>
+                    <p class="product-price">$89.00</p>
+                    <button class="product-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400&q=80" alt="Shoes" onerror="this.parentElement.textContent='No image'">
+                </div>
+                <div class="product-body">
+                    <p class="product-name">Sport Shoes</p>
+                    <p class="product-price">$120.00</p>
+                    <button class="product-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&q=80" alt="Camera" onerror="this.parentElement.textContent='No image'">
+                </div>
+                <div class="product-body">
+                    <p class="product-name">Instant Camera</p>
+                    <p class="product-price">$65.50</p>
+                    <button class="product-btn">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2025 MyShop. All rights reserved.</span>
+    </footer>
+
+</body>
+</html>

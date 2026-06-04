@@ -1,4 +1,4 @@
-﻿
+
 using AuthAdminCrud.MVC.Areas.Helper;
 using AuthAdminCrud.MVC.ViewModels;
 using Microsoft.AspNetCore.Authorization;
@@ -49,7 +49,7 @@ namespace AuthAdminCrud.MVC.Controllers
             }
             user.FullName = profileVm.FullName;
             user.Email = profileVm.Email;
-            user.ImageUrl= profileVm.File != null ? await FileHelper.SaveFileAsync(profileVm.File) : user.ImageUrl;
+            user.ImageUrl = profileVm.File != null ? await FileHelper.SaveFileAsync(profileVm.File) : user.ImageUrl;
             var result = await _userManager.UpdateAsync(user);
             if (!result.Succeeded)
             {
@@ -76,7 +76,16 @@ namespace AuthAdminCrud.MVC.Controllers
             {
                 return View(loginVm);
             }
-            var result = await _signInManager.PasswordSignInAsync(loginVm.UserName, loginVm.Password, true, true);
+            //?g?r UserName Uniqe edib yen? d? FullName il? axtaracaqsansa,FirstOrDefault lazimdir.
+            var user = await _userManager.Users.FirstOrDefaultAsync(x=>x.FullName==loginVm.UserName)
+            ?? await _userManager.FindByEmailAsync(loginVm.UserName);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Invalid login attempt.");
+                return View(loginVm);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, loginVm.Password, true, true);
             if (!result.Succeeded)
             {
                 ModelState.AddModelError("", "Invalid login attempt.");
@@ -106,9 +115,10 @@ namespace AuthAdminCrud.MVC.Controllers
             }
             var user = new AppUser
             {
+                //UserName = registerVm.Email---Bu forma daha yaxsidir cunki email unikal olmalidir
                 UserName = registerVm.Email,
+                FullName = registerVm.FullName,
                 Email = registerVm.Email,
-                FullName = registerVm.FullName
             };
             var result = await _userManager.CreateAsync(user, registerVm.Password);
             if (!result.Succeeded)
