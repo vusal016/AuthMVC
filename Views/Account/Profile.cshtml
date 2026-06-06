@@ -1,9 +1,8 @@
-﻿@model AuthAdminCrud.MVC.ViewModels.ProfileVM
-@{
+﻿@{
     Layout = null;
 }
+@model AuthAdminCrud.MVC.ViewModels.ProfileVM
 <!DOCTYPE html>
-
 <html lang="az">
 <head>
     <meta charset="UTF-8">
@@ -12,35 +11,33 @@
     <link rel="stylesheet" href="~/css/account-profile.css">
 </head>
 <body>
-
     <header class="site-header">
-        <a class="logo" href="index.html">MyShop</a>
+        <a class="logo" asp-controller="Home" asp-action="Index">MyShop</a>
         <nav class="nav-links">
-            <a href="index.html" class="btn-home">Home</a>
-            <a href="/logout" class="btn-logout">Logout</a>
+            <a asp-controller="Home" asp-action="Index" class="btn-home">Home</a>
+            <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn-logout">Logout</button>
+            </form>
         </nav>
     </header>
-
     <main class="main-content">
         <div class="profile-card">
-
             <div class="profile-banner"></div>
-
             <div class="profile-avatar-wrap">
-                <div class="profile-avatar" id="avatarInitial">D</div>
+                <div class="profile-avatar" id="avatarInitial">
+                    @Model.FullName?.Substring(0, 1).ToUpper()
+                </div>
             </div>
-
             <div class="profile-info">
-                <p class="profile-name" id="displayName">@Model.FullName</p>
-                <p class="profile-email" id="displayEmail">@Model.Email</p>
+                <p class="profile-name">@Model.FullName</p>
+                <p class="profile-email">@Model.Email</p>
                 <button class="btn-edit" onclick="toggleEdit()">Edit Profile</button>
             </div>
-
             <hr class="card-divider">
-
             <div class="edit-form" id="editForm">
                 <h2>Edit Profile</h2>
-                <form asp-action="Profile" asp-controller="Account" method="POST">
+                <form asp-action="Profile" asp-controller="Account" method="POST" enctype="multipart/form-data">
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
                         <label asp-for="FullName">Full Name</label>
@@ -52,33 +49,36 @@
                         <input asp-for="Email" type="email" required>
                         <span asp-validation-for="Email"></span>
                     </div>
+                    <div class="form-group">
+                        <label for="profileImage">Profile Image</label>
+                        <input type="file" id="profileImage" name="ProfileImage" accept="image/*">
+                    </div>
                     <div class="form-actions">
                         <button type="submit" class="btn-save">Save Changes</button>
                         <button type="button" class="btn-cancel" onclick="toggleEdit()">Cancel</button>
                     </div>
                 </form>
             </div>
-
+            <hr class="card-divider">
+            <div class="delete-section">
+                <form asp-action="DeleteAccount" asp-controller="Account" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn-delete"
+                            onclick="return confirm('Are you sure you want to delete your account? This cannot be undone.')">
+                        Delete Account
+                    </button>
+                </form>
+            </div>
         </div>
     </main>
-
     <script>
         function toggleEdit() {
-          const form = document.getElementById('editForm');
-          form.classList.toggle('open');
-        }
-
-        const nameEl = document.getElementById('displayName');
-        const avatarEl = document.getElementById('avatarInitial');
-        if (nameEl && avatarEl) {
-          avatarEl.textContent = nameEl.textContent.trim().charAt(0).toUpperCase();
+            const form = document.getElementById('editForm');
+            form.classList.toggle('open');
         }
     </script>
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
-
 </body>
 </html>

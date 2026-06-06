@@ -61,6 +61,27 @@ namespace AuthAdminCrud.MVC.Controllers
             }
             return RedirectToAction("Profile");
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAccount()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return RedirectToAction("Profile");
+            }
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
 
         [HttpGet]
         public async Task<IActionResult> Login()
@@ -76,8 +97,8 @@ namespace AuthAdminCrud.MVC.Controllers
             {
                 return View(loginVm);
             }
-            //?g?r UserName Uniqe edib yen? d? FullName il? axtaracaqsansa,FirstOrDefault lazimdir.
-            var user = await _userManager.Users.FirstOrDefaultAsync(x=>x.FullName==loginVm.UserName)
+            //Eger UserName Uniqe edib yene de FullName ile axtaracaqsansa,FirstOrDefault lazimdir.
+            var user = await _userManager.Users.FirstOrDefaultAsync(x => x.FullName == loginVm.UserName)
             ?? await _userManager.FindByEmailAsync(loginVm.UserName);
             if (user == null)
             {
@@ -91,6 +112,12 @@ namespace AuthAdminCrud.MVC.Controllers
                 ModelState.AddModelError("", "Invalid login attempt.");
                 return View(loginVm);
             }
+            //Admin Paneline daxil olduqda admin paneline, adi user daxil olduqda home page-e gonderirik
+            if (await _userManager.IsInRoleAsync(user, "Admin"))
+            {
+                return RedirectToAction("Index", "DashBoard", new { area = "AdminPanel" });
+            }
+
             return RedirectToAction("Index", "Home");
         }
         [HttpPost]
@@ -131,6 +158,11 @@ namespace AuthAdminCrud.MVC.Controllers
             }
             await _userManager.AddToRoleAsync(user, "User");
             return RedirectToAction("Login");
+        }
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

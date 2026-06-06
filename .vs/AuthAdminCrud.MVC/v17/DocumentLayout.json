@@ -3,16 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\wwwroot\\css\\adminpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:wwwroot\\css\\adminpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\areas\\adminpanel\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:areas\\adminpanel\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\areas\\adminpanel\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:areas\\adminpanel\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\wwwroot\\css\\home-index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:wwwroot\\css\\home-index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\wwwroot\\css\\account-profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:wwwroot\\css\\account-profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\authadmincrud.mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:authadmincrud.mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\areas\\adminpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:areas\\adminpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\viewmodels\\profilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:viewmodels\\profilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|c:\\users\\user\\onedrive\\desktop\\specials\\authadmincrud.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AB618A-1236-42D3-8C34-D4DF0C3190A9}|AuthAdminCrud.MVC.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 344,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,19 +86,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "adminpanel.css",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\wwwroot\\css\\adminpanel.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\adminpanel.css",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\wwwroot\\css\\adminpanel.css",
+              "RelativeToolTip": "wwwroot\\css\\adminpanel.css",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwv0EAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-06T17:52:18.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-03T21:28:11.439Z"
+              "WhenOpened": "2026-06-06T15:53:53.17Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DashBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Areas\\AdminPanel\\Controllers\\DashBoardController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Controllers\\DashBoardController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Areas\\AdminPanel\\Controllers\\DashBoardController.cs",
+              "RelativeToolTip": "Areas\\AdminPanel\\Controllers\\DashBoardController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T18:27:58.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Areas\\AdminPanel\\Views\\DashBoard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\DashBoard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Areas\\AdminPanel\\Views\\DashBoard\\Index.cshtml",
+              "RelativeToolTip": "Areas\\AdminPanel\\Views\\DashBoard\\Index.cshtml",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAwwLEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T18:29:41.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterVM.cs",
@@ -54,16 +147,147 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "account-profile.css",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\wwwroot\\css\\account-profile.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\account-profile.css",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\wwwroot\\css\\account-profile.css",
+              "RelativeToolTip": "wwwroot\\css\\account-profile.css",
+              "ViewState": "AgIAAHwAAAAAAAAAAADwvwQBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-04T20:28:16.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "home-index.css",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\wwwroot\\css\\home-index.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\home-index.css",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\wwwroot\\css\\home-index.css",
+              "RelativeToolTip": "wwwroot\\css\\home-index.css",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-04T19:51:24.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwEwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAGoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T20:55:28.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-03T20:55:28.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T19:28:15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Areas\\AdminPanel\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Areas\\AdminPanel\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Areas\\AdminPanel\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T18:28:31.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthAdminCrud.MVC.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\AuthAdminCrud.MVC.csproj",
+              "RelativeDocumentMoniker": "AuthAdminCrud.MVC.csproj",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\AuthAdminCrud.MVC.csproj",
+              "RelativeToolTip": "AuthAdminCrud.MVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-06T15:06:40.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T14:30:32.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\ViewModels\\ProductVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProductVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\ViewModels\\ProductVM.cs",
+              "RelativeToolTip": "ViewModels\\ProductVM.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T18:31:40.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T13:38:26.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T19:32:19.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProfileVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\ViewModels\\ProfileVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProfileVM.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\ViewModels\\ProfileVM.cs",
+              "RelativeToolTip": "ViewModels\\ProfileVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T21:34:01.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T21:28:11.439Z"
             }
           ]
         },

@@ -1,4 +1,6 @@
 ﻿@using AuthAdminCrud.MVC.ViewModels
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
 @model ICollection<ProductVM>
 @{
     Layout = null;
@@ -12,21 +14,33 @@
     <link rel="stylesheet" href="~/css/home-index.css">
 </head>
 <body>
-
     <header class="site-header">
-        <a class="logo" href="index.html">MyShop</a>
+        <a class="logo" asp-controller="Home" asp-action="Index">MyShop</a>
         <nav class="nav-links">
-            <a asp-controller="Account" asp-action="Login" class="btn-outline">Login</a>
-            <a asp-controller="Account" asp-action="Register" class="btn-primary">Register</a>
-            <a asp-controller="Account" asp-action="Logout" class="btn-logout">Logout</a>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-controller="Account" asp-action="Profile" class="btn-avatar" title="@User.Identity.Name">
+                    <div class="avatar-circle">@User.Identity.Name?.Substring(0, 1).ToUpper()</div>
+                </a>
+                <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn-logout">Logout</button>
+                </form>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login" class="btn-outline">Login</a>
+                <a asp-controller="Account" asp-action="Register" class="btn-primary">Register</a>
+                <a asp-controller="Account" asp-action="Login" class="btn-avatar" title="Sign in">
+                    <div class="avatar-circle guest">&#9998;</div>
+                </a>
+            }
         </nav>
     </header>
-
     <main class="main-content">
         <h1 class="section-title">Products</h1>
         <div class="products-grid">
-
-          @foreach (var product in Model)
+            @foreach (var product in Model)
             {
                 <!-- Product Card -->
                 <div class="product-card">
@@ -37,17 +51,13 @@
                         <p class="product-name">@product.Name</p>
                         <p class="product-price">$@product.Price</p>
                         <button class="product-btn">@product.ButtonText</button>
-
                     </div>
                 </div>
             }
-
         </div>
     </main>
-
     <footer class="footer">
         <span>Copyright &copy; 2025 MyShop. All rights reserved.</span>
     </footer>
-
 </body>
 </html>

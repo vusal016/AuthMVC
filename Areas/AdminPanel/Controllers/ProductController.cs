@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace AuthAdminCrud.MVC.Areas.AdminPanel.Controllers
-{
+{   
+    [Area("AdminPanel")]
     [Authorize(Roles = "Admin")]
     public class ProductController : Controller
     {

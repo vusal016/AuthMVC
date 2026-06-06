@@ -1,0 +1,10 @@
+﻿<div style="text-align:center; margin-top:100px;">
+    <h1>🚫 403</h1>
+    <h3>Bu səhifəyə girişiniz yoxdur.</h3>
+    <p>Fərqli hesabla daxil olmaq istəyirsinizsə:</p>
+    <form asp-action="Logout" asp-controller="Account" method="post">
+        @Html.AntiForgeryToken()
+        <button type="submit">Çıxış et və yenidən gir</button>
+    </form>
+    <a asp-controller="Home" asp-action="Index">Ana səhifəyə qayıt</a>
+</div>

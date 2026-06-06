@@ -238,3 +238,24 @@ body {
 .btn-cancel:hover {
     background: #f0f2f8;
 }
+.delete-section {
+    padding: 1.25rem 2rem 1.75rem;
+    text-align: center;
+}
+
+.btn-delete {
+    padding: 9px 24px;
+    background: #fff;
+    color: #e74a3b;
+    border: 1px solid #e74a3b;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+    .btn-delete:hover {
+        background: #e74a3b;
+        color: #fff;
+    }

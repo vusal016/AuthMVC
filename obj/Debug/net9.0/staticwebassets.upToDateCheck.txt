@@ -1,5 +1,3 @@
-wwwroot\admin\css\sb-admin-2.css
-wwwroot\admin\css\sb-admin-2.min.css
 wwwroot\admin\img\undraw_posting_photo.svg
 wwwroot\admin\img\undraw_profile.svg
 wwwroot\admin\img\undraw_profile_1.svg
@@ -1853,12 +1851,12 @@ wwwroot\admin\vendor\jquery\jquery.min.map
 wwwroot\admin\vendor\jquery\jquery.slim.js
 wwwroot\admin\vendor\jquery\jquery.slim.min.js
 wwwroot\admin\vendor\jquery\jquery.slim.min.map
-wwwroot\css\home-index.css
 wwwroot\css\account-login.css
-wwwroot\css\account-register.css
 wwwroot\css\account-profile.css
-C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\css\sb-admin-2.css
-C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\css\sb-admin-2.min.css
+wwwroot\css\account-register.css
+wwwroot\css\adminpanel.css
+wwwroot\css\home-index.css
+C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\css\adminpanel.css
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\img\undraw_posting_photo.svg
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\img\undraw_profile.svg
 C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\img\undraw_profile_1.svg
