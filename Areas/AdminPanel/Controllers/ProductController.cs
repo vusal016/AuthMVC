@@ -21,6 +21,7 @@ namespace AuthAdminCrud.MVC.Areas.AdminPanel.Controllers
         {
             var products = await _authDb.Products.Select(p => new ProductVM
             {
+                Id = p.Id,
                 Name = p.Name,
                 Price = p.Price,
                 ImageUrl = p.ImageUrl,
@@ -49,9 +50,22 @@ namespace AuthAdminCrud.MVC.Areas.AdminPanel.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult ProductEdit()
+        public async Task<IActionResult> ProductEdit(Guid id)
         {
-            return View();
+            var product = await _authDb.Products.FirstOrDefaultAsync(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            var productEditVM = new ProductEditVM
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Price = product.Price,
+                ButtonText = product.ButtonText,
+                ImageUrl = product.ImageUrl
+            };
+            return View(productEditVM);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]

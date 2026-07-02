@@ -29,7 +29,8 @@ namespace AuthAdminCrud.MVC.Controllers
             var profile = new ProfileVM
             {
                 FullName = user.FullName,
-                Email = user.Email
+                Email = user.Email,
+                ImageUrl = user.ImageUrl
             };
 
             return View(profile);

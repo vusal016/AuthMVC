@@ -16,6 +16,7 @@ namespace AuthAdminCrud.MVC.ViewModels
         [MaxLength(50)]
         public string ButtonText { get; set; }
          [DataType(DataType.Upload)]
-         public IFormFile Image { get; set; }
+         public IFormFile? Image { get; set; }
+         public string? ImageUrl { get; set; }
     }
 }

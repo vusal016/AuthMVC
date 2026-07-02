@@ -8388,11 +8388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\AuthAdminCrud.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthMVC\\AuthAdminCrud.MVC.csproj",
       "projectName": "AuthAdminCrud.MVC",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\AuthAdminCrud.MVC.csproj",
+      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthMVC\\AuthAdminCrud.MVC.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthAdminCrud.MVC\\obj\\",
+      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\SPECIALS\\AuthMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8469,7 +8469,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

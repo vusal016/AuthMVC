@@ -1,0 +1,87 @@
+@model ProductEditVM
+@{
+    ViewData["Title"] = "Məhsulu Redaktə Et";
+}
+
+<div class="admin-page-header">
+    <div>
+        <h2 class="admin-page-heading">Məhsulu Redaktə Et</h2>
+        <p class="admin-page-subtext">@Model.Name məhsulunun məlumatlarını yenilə.</p>
+    </div>
+    <a asp-area="AdminPanel" asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Geri
+    </a>
+</div>
+
+<div class="admin-card">
+    <div class="admin-card-body">
+        <form asp-area="AdminPanel" asp-controller="Product" asp-action="ProductEdit" method="post" enctype="multipart/form-data" class="admin-form">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+            <input asp-for="Id" type="hidden" />
+
+            <div class="mb-3">
+                <label asp-for="Name" class="admin-form-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Məhsulun adı" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Price" class="admin-form-label"></label>
+                <input asp-for="Price" type="number" min="0" class="form-control" placeholder="0" />
+                <span asp-validation-for="Price" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ButtonText" class="admin-form-label"></label>
+                <input asp-for="ButtonText" class="form-control" placeholder="Məs: Satın al" />
+                <span asp-validation-for="ButtonText" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="Image" class="admin-form-label">Yeni şəkil (istəyə bağlı)</label>
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <div class="admin-current-image mb-2">
+                        <img src="@Model.ImageUrl" alt="@Model.Name" />
+                        <span class="text-muted small">Hazırkı şəkil</span>
+                    </div>
+                }
+                <input type="file" id="Image" name="Image" accept="image/*" class="form-control" onchange="previewProductImage(this)" />
+                <span asp-validation-for="Image" class="text-danger small"></span>
+                <div class="admin-current-image mt-2 d-none" id="imagePreviewBox">
+                    <img id="imagePreview" src="" alt="" />
+                    <span class="text-muted small">Seçilmiş şəkil</span>
+                </div>
+            </div>
+
+            <div class="admin-form-actions">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-check me-1"></i> Yadda saxla
+                </button>
+                <a asp-area="AdminPanel" asp-controller="Product" asp-action="Index" class="btn btn-light">Ləğv et</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function previewProductImage(input) {
+            var box = document.getElementById('imagePreviewBox');
+            var preview = document.getElementById('imagePreview');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    box.classList.remove('d-none');
+                };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                box.classList.add('d-none');
+            }
+        }
+    </script>
+}

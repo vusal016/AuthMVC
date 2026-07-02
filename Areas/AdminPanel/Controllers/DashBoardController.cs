@@ -17,8 +17,11 @@ namespace AuthAdminCrud.MVC.Areas.AdminPanel.Controllers
         {
             var products = _authDb.Products.Select(x => new ProductVM
             {
+                Id = x.Id,
                 Name = x.Name,
-                Price = x.Price
+                Price = x.Price,
+                ImageUrl = x.ImageUrl,
+                ButtonText = x.ButtonText
             }).ToList();
 
             return View(products);

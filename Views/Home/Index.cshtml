@@ -1,9 +1,11 @@
 ﻿@using AuthAdminCrud.MVC.ViewModels
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
 @model ICollection<ProductVM>
 @{
     Layout = null;
+    var currentUser = SignInManager.IsSignedIn(User) ? await UserManager.GetUserAsync(User) : null;
 }
 <!DOCTYPE html>
 <html lang="az">
@@ -19,8 +21,21 @@
         <nav class="nav-links">
             @if (SignInManager.IsSignedIn(User))
             {
+                @if (User.IsInRole("Admin"))
+                {
+                    <a asp-area="AdminPanel" asp-controller="DashBoard" asp-action="Index" class="btn-outline">Admin Panel</a>
+                }
                 <a asp-controller="Account" asp-action="Profile" class="btn-avatar" title="@User.Identity.Name">
-                    <div class="avatar-circle">@User.Identity.Name?.Substring(0, 1).ToUpper()</div>
+                    <div class="avatar-circle">
+                        @if (!string.IsNullOrEmpty(currentUser?.ImageUrl))
+                        {
+                            <img src="@currentUser.ImageUrl" alt="@User.Identity.Name" />
+                        }
+                        else
+                        {
+                            @User.Identity.Name?.Substring(0, 1).ToUpper()
+                        }
+                    </div>
                 </a>
                 <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
                     @Html.AntiForgeryToken()

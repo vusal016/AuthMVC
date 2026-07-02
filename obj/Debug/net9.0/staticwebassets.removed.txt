@@ -1,2 +1,0 @@
-C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\css\sb-admin-2.css
-C:\Users\User\OneDrive\Desktop\SPECIALS\AuthAdminCrud.MVC\wwwroot\admin\css\sb-admin-2.min.css

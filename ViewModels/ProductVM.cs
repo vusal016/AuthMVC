@@ -4,6 +4,7 @@ namespace AuthAdminCrud.MVC.ViewModels
 {
     public class ProductVM
     {
+        public Guid Id { get; set; }
         [Required]
         [MaxLength(100)]
         public string Name { get; set; }

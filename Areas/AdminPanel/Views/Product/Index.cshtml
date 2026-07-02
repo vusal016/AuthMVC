@@ -1,0 +1,84 @@
+@model List<ProductVM>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="admin-page-header">
+    <div>
+        <h2 class="admin-page-heading">Məhsullar</h2>
+        <p class="admin-page-subtext">Bütün məhsulları idarə et.</p>
+    </div>
+    <a asp-area="AdminPanel" asp-controller="Product" asp-action="ProductCreate" class="btn btn-primary">
+        <i class="fas fa-plus me-1"></i> Yeni Məhsul
+    </a>
+</div>
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h3 class="admin-card-title">Bütün Məhsullar</h3>
+        <span class="text-muted small">@Model.Count nəticə</span>
+    </div>
+    <div class="admin-card-body">
+        @if (Model.Count == 0)
+        {
+            <div class="admin-empty-state">
+                <i class="fas fa-box-open"></i>
+                <p class="mb-0">Hələ heç bir məhsul əlavə edilməyib.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Şəkil</th>
+                            <th>Ad</th>
+                            <th>Qiymət</th>
+                            <th>Düymə Mətni</th>
+                            <th>Əməliyyat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                    {
+                                        <img src="@product.ImageUrl" alt="@product.Name" class="admin-table-thumb" />
+                                    }
+                                    else
+                                    {
+                                        <span class="admin-table-thumb d-inline-flex align-items-center justify-content-center text-muted">
+                                            <i class="fas fa-image"></i>
+                                        </span>
+                                    }
+                                </td>
+                                <td>@product.Name</td>
+                                <td>@product.Price.ToString("N0") ₼</td>
+                                <td>@product.ButtonText</td>
+                                <td>
+                                    <div class="admin-table-actions">
+                                        <a asp-area="AdminPanel" asp-controller="Product" asp-action="ProductEdit"
+                                           asp-route-id="@product.Id" class="btn btn-sm btn-warning" title="Düzəliş et">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+                                        <form asp-area="AdminPanel" asp-controller="Product" asp-action="ProductDelete"
+                                              asp-route-id="@product.Id" method="post"
+                                              onsubmit="return confirm('Bu məhsulu silmək istədiyinizə əminsiniz?');">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-sm btn-danger" title="Sil">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
