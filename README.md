@@ -1,4 +1,3 @@
-```markdown
 # 🔐 AuthAdminCrud.MVC
 
 A layered **ASP.NET Core MVC (.NET 9)** application demonstrating cookie-based authentication with ASP.NET Core Identity, role-based authorization, and an isolated **Admin Panel** area for product CRUD management.
@@ -200,4 +199,3 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 ---
 
 <p align="center">⭐ If you find this project useful, consider giving it a star!</p>
-```
