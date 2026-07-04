@@ -7,7 +7,6 @@ A layered **ASP.NET Core MVC (.NET 9)** application demonstrating cookie-based a
   <img src="https://img.shields.io/badge/ASP.NET_Core-MVC-512BD4?style=flat&logo=dotnet&logoColor=white" alt="ASP.NET Core MVC" />
   <img src="https://img.shields.io/badge/EF_Core-9-512BD4?style=flat" alt="EF Core 9" />
   <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white" alt="SQL Server" />
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="License" />
 </p>
 
 ---
@@ -179,13 +178,6 @@ dotnet run
 ```
 
 On first run, the seeder creates the `Admin` and `User` roles along with a default admin account. Check `Data/Seed/SeederProgram.cs` for the seeded admin credentials, and change them before any public deployment.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## 👤 Author
